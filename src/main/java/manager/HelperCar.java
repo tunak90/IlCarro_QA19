@@ -46,11 +46,11 @@ public class HelperCar extends HelperBase {
     }
 
     private void inputCarRegNumber(Car car) {
-        Rectangle rect = wd.findElement(By.xpath("//input[@id='serialNumber']")).getRect();
+        Rectangle rect = wd.findElement(By.cssSelector(".input-container:nth-child(11)")).getRect();
        int x = rect.getX() + (rect.getWidth() - rect.getWidth() / 6);
 //        int x = rect.getX() + 350;
-        int y = rect.getY() +( rect.getHeight() - rect.getHeight() / 6);
- //       int y = rect.getY() + rect.getHeight() /3;
+ //       int y = rect.getY() +( rect.getHeight() - rect.getHeight() / 6);
+        int y = rect.getY() + rect.getHeight() /2;
         Actions actions = new Actions(wd);
         actions.moveByOffset(x, y).click().sendKeys(car.getCarRegNumber()).perform();
     }

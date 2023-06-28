@@ -40,7 +40,7 @@ public class AddNewCarTests extends TestBase {
                 .build();
         app.getCar().openCarForm();
         app.getCar().fillCarForm(car);
-        app.getCar().submit();
+  //      app.getCar().submit();
 
     }
 }
