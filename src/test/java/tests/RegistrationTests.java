@@ -16,8 +16,11 @@ public class RegistrationTests extends TestBase {
               .withPassword("SAfdghk@l123");
 
       app.getUser().openRegistrationForm();
+      logger.info("Method openRegistrationForm() invoked");
       app.getUser().fillRegistrationForm(user);
+      logger.info("Method fillRegistrationForm() invoked");
       app.getUser().submitForm();
+      logger.info("Method submitForm() invoked");
       logger.info("Registration test starts with data : " + user.getEmail()
               + " & " + user.getPassword());
       Assert.assertTrue(app.getUser().isRegistered());
@@ -35,6 +38,8 @@ public class RegistrationTests extends TestBase {
       app.getUser().openRegistrationForm();
       app.getUser().fillRegistrationForm(user);
       app.getUser().submitForm();
+      logger.info("Registration test starts with data : " + user.getEmail()
+              + " & " + user.getPassword());
 
    }
 

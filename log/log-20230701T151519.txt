@@ -1,0 +1,24 @@
+15:15:26 INFO  tests.TestBase - Start test  ---> registrationPositive
+15:15:26 INFO  manager.MyListener - Start searching element by locator -->By.xpath: //a[text()=' Sign up ']
+15:15:26 INFO  manager.MyListener - Element with locator --->By.xpath: //a[text()=' Sign up ']is found
+15:15:27 INFO  tests.TestBase - Method openRegistrationForm() invoked
+15:15:27 INFO  manager.MyListener - Start searching element by locator -->By.id: name
+15:15:27 INFO  manager.MyListener - Element with locator --->By.id: nameis found
+15:15:27 INFO  manager.MyListener - Start searching element by locator -->By.id: lastName
+15:15:27 INFO  manager.MyListener - Element with locator --->By.id: lastNameis found
+15:15:28 INFO  manager.MyListener - Start searching element by locator -->By.id: email
+15:15:28 INFO  manager.MyListener - Element with locator --->By.id: emailis found
+15:15:28 INFO  manager.MyListener - Start searching element by locator -->By.id: password
+15:15:28 INFO  manager.MyListener - Element with locator --->By.id: passwordis found
+15:15:29 INFO  manager.MyListener - Start searching element by locator -->By.cssSelector: .checkbox-container
+15:15:29 INFO  manager.MyListener - Element with locator --->By.cssSelector: .checkbox-containeris found
+15:15:29 INFO  tests.TestBase - Method fillRegistrationForm() invoked
+15:15:29 INFO  manager.MyListener - Start searching element by locator -->By.xpath: //button[@type='submit']
+15:15:29 INFO  manager.MyListener - Element with locator --->By.xpath: //button[@type='submit']is found
+15:15:30 INFO  tests.TestBase - Method submitForm() invoked
+15:15:30 INFO  tests.TestBase - Registration test starts with data : john2914@gmail.com & SAfdghk@l123
+15:15:30 INFO  manager.MyListener - Start searching element by locator -->By.cssSelector: .dialog-container
+15:15:31 INFO  manager.MyListener - Element with locator --->By.cssSelector: .dialog-containeris found
+15:15:31 INFO  manager.MyListener - Start searching element by locator -->By.cssSelector: .dialog-container
+15:15:31 INFO  manager.MyListener - Element with locator --->By.cssSelector: .dialog-containeris found
+15:15:31 INFO  tests.TestBase - ==================

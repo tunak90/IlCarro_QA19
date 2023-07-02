@@ -38,22 +38,20 @@ public class HelperCar extends HelperBase {
         select(By.id("fuel"), car.getFuel());
         type(By.id("seats"), car.getSeats());
         type(By.id("class"), car.getCarClass());
-        // type(By.id("serialNumber"), car.getCarRegNumber());
-        inputCarRegNumber(car);
+         type(By.id("serialNumber"), car.getCarRegNumber());
+        //typeSerialNumber(car.getCarRegNumber());
         type(By.id("price"), car.getPrice());
 
 
     }
 
-    private void inputCarRegNumber(Car car) {
-        Rectangle rect = wd.findElement(By.cssSelector(".input-container:nth-child(11)")).getRect();
-       int x = rect.getX() + (rect.getWidth() - rect.getWidth() / 6);
-//        int x = rect.getX() + 350;
- //       int y = rect.getY() +( rect.getHeight() - rect.getHeight() / 6);
-        int y = rect.getY() + rect.getHeight() /2;
-        Actions actions = new Actions(wd);
-        actions.moveByOffset(x, y).click().sendKeys(car.getCarRegNumber()).perform();
-    }
+//    private void typeSerialNumber(String serialNumber) {
+//        Rectangle rect = wd.findElement(By.id("serialNumber")).getRect();
+//        int x = rect.getX() + rect.getWidth() * 7 / 8;
+//        int y = rect.getY() + rect.getHeight() / 2;
+//        Actions actions = new Actions(wd);
+//        actions.moveByOffset(x, y).click().perform();
+//    }
 
     public void typeLocation(String address) {
         type(By.id("pickUpPlace"), address);
